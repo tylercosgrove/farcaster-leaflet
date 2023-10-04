@@ -142,7 +142,7 @@ export default function Home() {
               Once I had a list of which users are similar and which aren’t, I
               used a siamese neural net with a contrastive loss function to
               generate positional embeddings for each user. A siamese network
-              means two users are semt as input into the model at the same time,
+              means two users are sent as input into the model at the same time,
               thus producing two positional embeddings. Then, if the users are
               similar, the loss value is just the euclidean distance between the
               two embeddings. If the users aren’t similar, the loss value is
