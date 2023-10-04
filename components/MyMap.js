@@ -119,7 +119,7 @@ const MyMap = () => {
   return (
     <>
       <div className="border rounded">{mapContainer}</div>
-      <div className="flex justify-between mt-2 gap-2 mb-10 p-1">
+      <div className="flex flex-col-reverse items-center md:items-start md:flex-row justify-between mt-2 gap-2 mb-10 p-1">
         <div className="w-full border rounded p-2 bg-slate-100 h-fit">
           <p className="text-lg">search for user:</p>
           <input
@@ -156,7 +156,7 @@ const MyMap = () => {
           ))}
         </div>
         {currentUser && (
-          <div className="w-64 p-2 rounded cursor-default bg-slate-100 border">
+          <div className="w-40 md:w-64 p-2 rounded cursor-default bg-slate-100 border">
             <p className="text-xl font-bold">{currentUser.metadata[2]}</p>
             <p className="text-sm text-slate-500">@{currentUser.metadata[1]}</p>
             <div className="square-container border rounded-lg">
